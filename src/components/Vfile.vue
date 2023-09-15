@@ -57,7 +57,13 @@ const drop = (e)=>{
 }
 const uploadfiles = []
 const uploadfile = function(){
-  
+  const formData = new FormData();
+  for (const extendFile of fileMap.value.values()) {
+    formData.append(extendFile.file.name, extendFile.file)
+  }
+  axios.post("your server address", formData)
+
+
     var timestamp = (new Date()).valueOf();
     var url = "http://localhost/file";
     var xhr = new XMLHttpRequest();
