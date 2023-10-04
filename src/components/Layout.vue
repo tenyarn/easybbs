@@ -11,6 +11,7 @@ import Vlist from './Vlist.vue'
     <div class="bottom-layout">
         <router-link to="/vlist">list</router-link>
         <router-link to="/vfile">file</router-link>
+        <router-link to="/vavater">avater</router-link>
         <router-link to="/">back</router-link>
         <router-view></router-view>
         
